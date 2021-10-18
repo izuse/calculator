@@ -1,0 +1,33 @@
+int main()
+{
+    float v1;
+    float v2;
+    float resultado;
+    char op;
+
+  
+   
+    printf("Entre com a equacao: ");
+    scanf("%f %c %f", &v1, &op, &v2);
+
+    switch(op) {
+    case '+':
+        resultado = v1 + v2;
+        break;
+    case '-':
+        resultado = v1 - v2;
+        break;
+    case '*':
+        resultado = v1 * v2;
+        break;
+    case '/':
+        resultado = v1 / v2;
+        break;
+    default:
+        printf("Operacao invalida");
+    return 1;
+    }
+
+    printf("O resultado foi:\n %f", resultado);
+    return 0;
+}
